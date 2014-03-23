@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fff;
+    width: 620px;
+    margin: 0 auto;
+}
+.container {
+	width: 620px;
+	text-align: center;
+}
+.container h1 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+/**
+ * Carousel wrapper
+ */
+.bbcarousel {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	-webkit-box-shadow: 0 0 10px #333;
+	-moz-box-shadow: 0 0 10px #333;
+	box-shadow: 0 0 10px #333;
+}
+
+/**
+ * Control arrows
+ */
+.bbcarousel .arrow {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	margin-top: -1em;
+	font-size: 1em;
+	text-align: center;
+	cursor: pointer;
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid transparent;
+}
+.bbcarousel .prev {
+	left: -3em;
+	width: 0; 
+	height: 0; 
+	border-right: 2em solid black; 
+}
+.bbcarousel .next {
+	right: -3em;
+	width: 0; 
+	height: 0; 
+	border-left: 2em solid black; 
+}
+.bbcarousel .prev.disabled {
+	border-right-color: #eee;
+}
+.bbcarousel .next.disabled {
+	border-left-color: #eee;
+}
+
+/**
+ * Slides container
+ */
+.bbcarousel .overflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+/**
+ * Slides list
+ */
+.bbcarousel .overflow .slides {
+	list-style: none;
+	width: 20000em;
+	-webkit-transition: .5s ease;
+	-moz-transition: .5s ease;
+	-o-transition: .5s ease;
+	-ms-transition: .5s ease;
+	transition: .5s ease;
+}
+.bbcarousel .overflow .slides .slide {
+	float: left;
+	text-align: center;
+}
+.bbcarousel .overflow .slides .slide img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.bbcarousel .overflow .slides .slide label {
+	display: block;
+	font-family: sans-serif;
+	font-size: .75em;
+	font-weight: lighter;
+	line-height: 2em;
+}
+
+/**
+ * Navigation bullets
+ */
+.bbcarousel .nav {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+	z-index: 9;
+	text-align: center;
+}
+.bbcarousel .nav li {
+	display: inline-block;
+}
+.bbcarousel .nav li a {
+	display: block;
+	width: .75em;
+	height: .75em;
+	border: 1px solid black;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: rgba(238, 238, 238, 0.5);
+}
+.bbcarousel .nav li.active a {
+	background-color: black;
+}
