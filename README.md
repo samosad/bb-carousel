@@ -1,10 +1,11 @@
 # BBCarousel
-===========
 
 Backbone carousel image slider
 
 ## Tools 
-yeoman, bower, grunt.
+* yeoman
+* bower
+* grunt
 
 ## Dependencies
 
@@ -14,25 +15,17 @@ yeoman, bower, grunt.
 
 ## Usage
 
-```html
-<div id="carousel2"></div>
+```javascript
+var slides = [
+	{ 'src': '../images/1.jpg', 'label': 'Slide 1' },
+	{ 'src': '../images/2.jpg', 'label': 'Slide 2' },
+];
 
-<script src="scripts/bbcarousel.js"></script>
-
-<script type="text/javascript">
-  
-  var slides = [
-    { 'src': '../images/1.jpg', 'label': 'Slide 1' },
-    { 'src': '../images/2.jpg', 'label': 'Slide 2' },
-  ];
-
-	var view = new BBCarousel({
-			el : "#slideshow",
-			collection : new Backbone.Collection(slides),
-			template : "../templates/bbcarousel.html"
-	});
-
-</script>
+var view = new BBCarousel({
+	el : "#carousel",
+	collection : new Backbone.Collection(slides),
+	template : "../templates/bbcarousel.html"
+});
 ```
 
 For local view:
