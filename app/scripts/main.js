@@ -6,31 +6,31 @@ window.APP = {
     Collections: {
         slides: new Backbone.Collection([
             {
-                'src': '../images/7.jpg',
+                'src': 'images/7.jpg',
                 'label': 'Slide 7'
             },
             {
-                'src': '../images/6.jpg',
+                'src': 'images/6.jpg',
                 'label': 'Slide 6'
             },
             {
-                'src': '../images/5.jpg',
+                'src': 'images/5.jpg',
                 'label': 'Slide 5'
             },
             {
-                'src': '../images/4.jpg',
+                'src': 'images/4.jpg',
                 'label': 'Slide 4'
             },
             {
-                'src': '../images/3.jpg',
+                'src': 'images/3.jpg',
                 'label': 'Slide 3'
             },
             {
-                'src': '../images/2.jpg',
+                'src': 'images/2.jpg',
                 'label': 'Slide 2'
             },
             {
-                'src': '../images/1.jpg',
+                'src': 'images/1.jpg',
                 'label': 'Slide 1'
             }
         ])
