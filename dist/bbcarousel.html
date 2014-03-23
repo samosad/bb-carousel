@@ -1,0 +1,21 @@
+<a class="arrow prev disabled"></a>
+<a class="arrow next"></a>
+<div class="overflow">
+    <ul class="slides">
+        <% _.each( slides, function( slide ){ %>
+            <li class="slide">
+                <img src="<%- slide.src %>" alt="<%- slide.label %>">
+                <label>
+                    <%- slide.label %>
+                </label>
+            </li>
+            <% }); %>
+    </ul>
+</div>
+<ul class="nav">
+    <% _.each( slides, function( slide ){ %>
+        <li>
+            <a href="#"></a>
+        </li>
+        <% }); %>
+</ul>

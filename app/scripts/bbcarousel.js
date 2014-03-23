@@ -43,7 +43,7 @@
                 self.slidesWidth = self.$slides.width();
                 self.slidesNum = self.$slides.length;
                 self.showSlide(0);
-            }, 100);
+            }, 300);
             return this;
         },
 
