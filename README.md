@@ -40,6 +40,10 @@ $ grunt serve
 
 View the [DEMO](http://samosad.github.io/bb-carousel/)
 
+## TODO
+* Add play/pause feature
+* Add image circle feature
+* Add popup window with big image
 
 ## Credits
 

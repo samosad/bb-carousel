@@ -50,7 +50,7 @@ window.APP = {
         APP.Views.carousel2 = new BBCarousel({
             el: '#carousel2',
             collection: APP.Collections.slides,
-            template: '../templates/bbcarousel-template.html'
+            template: '../templates/bbcarousel.html'
         });
         APP.Views.carousel2.render();
     }
