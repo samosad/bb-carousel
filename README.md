@@ -3,9 +3,9 @@
 Backbone carousel image slider
 
 ## Tools 
-* yeoman
-* bower
-* grunt
+* [Yeoman](http://yeoman.io/)
+* [Grunt](http://gruntjs.com/)
+* [Bower](http://bower.io/)
 
 ## Dependencies
 
@@ -21,24 +21,27 @@ var slides = [
 	{ 'src': '../images/2.jpg', 'label': 'Slide 2' },
 ];
 
-var view = new BBCarousel({
+var carousel = new BBCarousel({
 	el : "#carousel",
 	collection : new Backbone.Collection(slides),
 	template : "../templates/bbcarousel.html"
 });
 ```
 
-For local view:
+Parameters 'collection' and 'template' are optional.
+You can also use fixed markup. Look at examples.
+
+## Example
+
+View the online [DEMO](http://samosad.github.io/bb-carousel/)
+
+or start local server:
 
 ```
 $ npm install
 $ bower install
 $ grunt serve
 ```
-
-## Example
-
-View the [DEMO](http://samosad.github.io/bb-carousel/)
 
 ## TODO
 * Use Modernizr transition functions
